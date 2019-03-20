@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35345" started-at="2019-03-11T12:26:27Z" finished-at="2019-03-11T12:27:02Z">
+  <suite name="Default suite" duration-ms="80965" started-at="2019-03-20T07:07:03Z" finished-at="2019-03-20T07:08:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35345" started-at="2019-03-11T12:26:27Z" finished-at="2019-03-11T12:27:02Z">
-      <class name="com.training.sanity.tests.RETC_025Tests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RETC_025Tests@4c70fda8]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2019-03-11T17:56:27Z" finished-at="2019-03-11T17:56:27Z">
+    <test name="Default test" duration-ms="80965" started-at="2019-03-20T07:07:03Z" finished-at="2019-03-20T07:08:23Z">
+      <class name="com.training.sanity.tests.RETC_055Tests">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RETC_055Tests@7cd62f43]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-03-20T07:07:03Z" finished-at="2019-03-20T07:07:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RETC_025Tests@4c70fda8]" name="setUp" is-config="true" duration-ms="20922" started-at="2019-03-11T17:56:27Z" finished-at="2019-03-11T17:56:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RETC_055Tests@7cd62f43]" name="setUp" is-config="true" duration-ms="15789" started-at="2019-03-20T07:07:03Z" finished-at="2019-03-20T07:07:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="FilterPropertiesTest()[pri:0, instance:com.training.sanity.tests.RETC_025Tests@4c70fda8]" name="FilterPropertiesTest" duration-ms="12551" started-at="2019-03-11T17:56:47Z" finished-at="2019-03-11T17:57:00Z">
+        <test-method status="PASS" signature="RestoredPropertySearchTest()[pri:0, instance:com.training.sanity.tests.RETC_055Tests@7cd62f43]" name="RestoredPropertySearchTest" duration-ms="63215" started-at="2019-03-20T07:07:18Z" finished-at="2019-03-20T07:08:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FilterPropertiesTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_025Tests@4c70fda8]" name="tearDown" is-config="true" duration-ms="1842" started-at="2019-03-11T17:57:00Z" finished-at="2019-03-11T17:57:02Z">
+        </test-method> <!-- RestoredPropertySearchTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_055Tests@7cd62f43]" name="tearDown" is-config="true" duration-ms="1914" started-at="2019-03-20T07:08:22Z" finished-at="2019-03-20T07:08:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.RETC_025Tests -->
+      </class> <!-- com.training.sanity.tests.RETC_055Tests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
