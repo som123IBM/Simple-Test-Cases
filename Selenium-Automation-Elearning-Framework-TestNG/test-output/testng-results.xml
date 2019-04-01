@@ -1,29 +1,233 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="80965" started-at="2019-03-20T07:07:03Z" finished-at="2019-03-20T07:08:23Z">
+  <suite name="Default suite" duration-ms="164674" started-at="2019-04-01T11:48:15Z" finished-at="2019-04-01T11:50:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="80965" started-at="2019-03-20T07:07:03Z" finished-at="2019-03-20T07:08:23Z">
-      <class name="com.training.sanity.tests.RETC_055Tests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RETC_055Tests@7cd62f43]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-03-20T07:07:03Z" finished-at="2019-03-20T07:07:03Z">
+    <test name="Default test" duration-ms="164674" started-at="2019-04-01T11:48:15Z" finished-at="2019-04-01T11:50:59Z">
+      <class name="com.training.sanity.tests.RETC_084Tests">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="setUpBeforeClass" is-config="true" duration-ms="30" started-at="2019-04-01T11:48:15Z" finished-at="2019-04-01T11:48:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RETC_055Tests@7cd62f43]" name="setUp" is-config="true" duration-ms="15789" started-at="2019-03-20T07:07:03Z" finished-at="2019-03-20T07:07:18Z">
+        <test-method status="FAIL" signature="AddMultipleRegionTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="AddMultipleRegionTest" duration-ms="164624" started-at="2019-04-01T11:48:15Z" data-provider="excel-inputs3" finished-at="2019-04-01T11:50:59Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: AddMultipleRegionTest([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [null,null,null,null,null,null,null,null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: AddMultipleRegionTest([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [null,null,null,null,null,null,null,null]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:982)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddMultipleRegionTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="setUp" is-config="true" duration-ms="19637" started-at="2019-04-01T11:48:15Z" finished-at="2019-04-01T11:48:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="RestoredPropertySearchTest()[pri:0, instance:com.training.sanity.tests.RETC_055Tests@7cd62f43]" name="RestoredPropertySearchTest" duration-ms="63215" started-at="2019-03-20T07:07:18Z" finished-at="2019-03-20T07:08:22Z">
+        <test-method status="PASS" signature="AddMultipleRegionTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="AddMultipleRegionTest" duration-ms="30404" started-at="2019-04-01T11:48:35Z" data-provider="excel-inputs3" finished-at="2019-04-01T11:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test exam3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[teste3@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test3]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Exam3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Test3#123456789]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Subscriber]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RestoredPropertySearchTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_055Tests@7cd62f43]" name="tearDown" is-config="true" duration-ms="1914" started-at="2019-03-20T07:08:22Z" finished-at="2019-03-20T07:08:23Z">
+        </test-method> <!-- AddMultipleRegionTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="tearDown" is-config="true" duration-ms="1832" started-at="2019-04-01T11:49:05Z" finished-at="2019-04-01T11:49:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.RETC_055Tests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="setUp" is-config="true" duration-ms="25578" started-at="2019-04-01T11:49:07Z" finished-at="2019-04-01T11:49:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="AddMultipleRegionTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="AddMultipleRegionTest" duration-ms="36005" started-at="2019-04-01T11:49:33Z" data-provider="excel-inputs3" finished-at="2019-04-01T11:50:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[alex hales3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[alex3@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Alex3]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Hales3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Alex3#123456789]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Subscriber]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddMultipleRegionTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="tearDown" is-config="true" duration-ms="1914" started-at="2019-04-01T11:50:09Z" finished-at="2019-04-01T11:50:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="setUp" is-config="true" duration-ms="17722" started-at="2019-04-01T11:50:11Z" finished-at="2019-04-01T11:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="AddMultipleRegionTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="AddMultipleRegionTest" duration-ms="29044" started-at="2019-04-01T11:50:29Z" data-provider="excel-inputs3" finished-at="2019-04-01T11:50:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test manipal3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manipal3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test3]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Manipal3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Manipal3#123456789]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Subscriber]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddMultipleRegionTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RETC_084Tests@6d4b1c02]" name="tearDown" is-config="true" duration-ms="1857" started-at="2019-04-01T11:50:58Z" finished-at="2019-04-01T11:50:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.RETC_084Tests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

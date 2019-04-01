@@ -25,6 +25,9 @@ public class LoginPOM {
 	@FindBy(name="login")
 	private WebElement loginBtn;
 	
+	@FindBy(xpath="//a[@class='ab-item'][contains(text(),'Log Out')]")
+	private WebElement logOutLink;
+	
 	public void sendUserName(String userName) {
 		this.userName.clear();
 		this.userName.sendKeys(userName);
@@ -37,5 +40,9 @@ public class LoginPOM {
 	
 	public void clickLoginBtn() {
 		this.loginBtn.click(); 
+	}
+	
+	public void clickLogOutLink() {
+		this.logOutLink.click(); 
 	}
 }

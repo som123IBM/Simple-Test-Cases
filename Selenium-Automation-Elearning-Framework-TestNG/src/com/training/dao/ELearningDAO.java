@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Properties;
 
 import com.training.bean.LoginBean;
+import com.training.bean.RealEstateBean;
 import com.training.connection.GetConnection;
 import com.training.utility.LoadDBDetails;
 
@@ -53,9 +54,37 @@ public class ELearningDAO {
 		
 		return list; 
 	}
+	public List<RealEstateBean> getRealEstateFeatures(){
+		String sql = properties.getProperty("get.features"); 
+
+		GetConnection gc  = new GetConnection(); 
+		List<RealEstateBean> list = null;
+		try {
+			gc.ps1 = GetConnection.getMySqlConnection(LoadDBDetails.getDBDetails()).prepareStatement(sql); 
+			list = new ArrayList<RealEstateBean>(); 
+
+			gc.rs1 = gc.ps1.executeQuery(); 
+
+			while(gc.rs1.next()) {
+
+				RealEstateBean temp = new RealEstateBean();
+				temp.setNameTextBox(gc.rs1.getString(1));
+				temp.setSlugTextBox(gc.rs1.getString(2));
+				temp.setParentFeatureListbox(gc.rs1.getString(3));
+				temp.setdDscriptionTextBox(gc.rs1.getString(4));
+				list.add(temp); 
+
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+              
+		return list; 
+	}
 	
 	public static void main(String[] args) {
-		new ELearningDAO().getLogins().forEach(System.out :: println);
+		
+		new ELearningDAO().getRealEstateFeatures().forEach(System.out :: println);
 	}
 	
 	
